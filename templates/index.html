@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Shiksha Mitra → Offline AI Tutor</title>
+</head>
+
+<body>
+    <h1>Shiksha Mitra</h1>
+    <p>Welcome to the Shiksha Mitra application!</p>
+
+    <!-- TEXT INPUT FORM -->
+    <form method="POST">
+        <label for="text_input">Answer the asked question:</label>
+        <input type="text" id="text_input" name="text_input" placeholder="What is photosynthesis?" required>
+        <button type="submit" name="action" value="text">Submit</button>
+    </form>
+
+    <br><br>
+
+    <!-- IMAGE INPUT FORM -->
+    <form method="POST" enctype="multipart/form-data">
+        <label for="image">Upload an image:</label>
+        <input type="file" id="image" name="image" accept="image/*" required>
+        <button type="submit" name="action" value="image">Submit</button>
+    </form>
+
+    {% if response %}
+        <h2>Response:</h2>
+        <p>{{ response }}</p>
+    {% endif %}
+
+    <hr>
+    <div class="footer-buttons">
+            <button onclick="alert('Coming Soon!')"> Voice Input</button>
+            <button onclick="alert('Coming Soon!')"> Image Upload</button>
+    </div>
+</body>
+</html>
