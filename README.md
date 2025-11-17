@@ -101,6 +101,63 @@ Contributions
 
 Contributions, ideas, and suggestions are welcome. Please open an issue or submit a pull request.
 
+
+# Shiksha Mitra – Offline AI Tutor
+
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/)
+
+---
+
+## 🚀 About the Project
+
+Shiksha Mitra is a multilingual, multimodal offline AI tutor designed for students in low-connectivity areas.  
+It can answer questions, generate diagrams, solve math problems from photos, and provide interactive learning tools — all without internet access.
+
+Key highlights:
+
+- **Multimodal Outputs:** Text, tables, diagrams, structured answers
+- **Interactive Learning:** Quiz mode, practice mode, hints, scoring
+- **Image Understanding:** OCR, object/shape recognition, math from notebook photos
+- **Offline AI Processing:** Works on laptops or local servers with Gemma 2B / 7B
+- **Persistent Memory:** Stores prompts and responses in MongoDB
+- **Multilingual Support:** English, Hindi, Marathi, Gujarati, Russian, Bihari/Bhojpuri
+
+---
+
+## 🏗 Features
+
+| Feature | Description |
+|---------|-------------|
+| **Text Q&A** | Ask questions and get detailed explanations with inline references |
+| **Image Generation** | Generate diagrams or visuals using OpenAI |
+| **Quiz / Practice Mode** | Interactive learning with hints and scoring |
+| **Memory** | Keeps track of previous prompts and responses in MongoDB |
+| **Offline Mode** | Run AI models locally without internet |
+| **Multilingual** | Switch between multiple languages seamlessly |
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** React.js
+- **Backend:** Flask
+- **AI Models:** Gemma 2B / 7B, OpenAI API (optional)
+- **Database:** MongoDB
+- **Deployment:** Render (backend), Vercel (frontend)
+- **Other Tools:** Python-dotenv, Flask-CORS, OpenAI API
+
+---
+
+## 💻 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/<your-username>/Tutor_agent.git
+cd Tutor_agent/backend
+
+
 Contact
 
 For collaboration or questions: sv695177@gmail.com
