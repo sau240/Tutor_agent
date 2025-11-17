@@ -1,0 +1,200 @@
+/* * Shiksha Mitra - Sleek Dark Theme Styles
+Luxury Edition: Based on #0A0A0A (Deepest Gray) for containers, #1E3A34 (Deep Forest Green) for background, and #C36E1D (Copper/Bronze) accents.
+*/
+
+/* === GENERAL STYLING === */
+body {
+/* **NEW BACKGROUND: Deep Forest Green for a rich, earthy look that complements bronze** */
+background: #1E3A34; 
+color: #F0F0F0;
+font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+min-height: 100vh;
+}
+
+/* --- Typography --- */
+h1 {
+/* Gradient from the new BG color to the Copper accent */
+background: linear-gradient(135deg, #1E3A34 0%, #7A4211 100%);
+color: #FFFFFF;
+width: 100%;
+text-align: center;
+margin: 0;
+padding: 30px 0;
+font-size: 3em;
+font-weight: 700;
+letter-spacing: 2px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+/* Using the muted Copper/Bronze accent color for section headings */
+color: #E2945D; /* Muted Bronze */
+font-weight: 600;
+}
+
+p {
+color: #CFCFCF;
+}
+
+/* === MAIN CONTAINER (The central card) === */
+.container {
+width: 100%;
+max-width: 750px;
+padding: 35px 30px;
+margin: 40px auto;
+/* **CARD BACKGROUND: Deep Off-Black/Charcoal for maximum contrast against the green body** */
+background: #0A0A0A;
+border-radius: 20px;
+/* Shadow enhanced against the dark green background */
+box-shadow: 0 15px 40px rgba(0, 0, 0, 0.9), 0 0 0 1px #3E5A54; /* Border highlight adjusted */
+}
+
+/* === FORMS & INPUTS === */
+label {
+display: block;
+font-weight: 500;
+color: #EAEAEA;
+margin-bottom: 10px;
+font-size: 1.1em;
+text-align: left;
+}
+
+input[type="text"],
+input[type="file"] {
+width: 100%;
+padding: 15px;
+margin-bottom: 20px;
+border: 1px solid #1C1C1C; 
+border-radius: 10px;
+box-sizing: border-box;
+/* Input background slightly lighter than the container for contrast */
+background-color: #121212;
+color: #FFFFFF;
+font-size: 1em;
+transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus {
+/* Highlight on focus with rich primary Copper/Bronze */
+border-color: #C36E1D;
+box-shadow: 0 0 8px rgba(195, 110, 29, 0.5);
+outline: none;
+}
+
+/* === BUTTONS (Unified Style) === */
+button {
+/* Rich primary Copper/Bronze */
+background-color: #C36E1D;
+color: #FFFFFF; 
+border: none;
+padding: 13px 25px;
+cursor: pointer;
+border-radius: 10px;
+font-size: 1.05em;
+font-weight: 600;
+transition: background-color 0.3s ease, transform 0.1s;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+/* Muted accent Copper/Bronze on hover */
+background-color: #E2945D;
+transform: translateY(-1px);
+}
+
+/* Disable state for loading/disabled buttons */
+button:disabled {
+background-color: #3A3A3A;
+cursor: not-allowed;
+color: #888;
+box-shadow: none;
+transform: none;
+}
+
+/* === RESPONSE BLOCK (Sleek & Unified) === */
+
+.response-box {
+/* This box color integrates with the green background */
+background: #3E5A54; 
+/* Primary Copper/Bronze border */
+border: 1px solid #C36E1D;
+padding: 30px;
+border-radius: 12px;
+box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+margin-top: 20px;
+text-align: left;
+color: #F0F0F0;
+font-size: 1.1em;
+line-height: 1.7;
+white-space: pre-wrap;
+}
+
+.response-box p {
+margin: 0;
+color: #F0F0F0;
+}
+
+/* === SEPARATOR === */
+hr {
+margin: 40px 0;
+border: none;
+height: 2px;
+background: linear-gradient(to right, #1C1C1C, #3E5A54, #1C1C1C);
+}
+
+/* === FOOTER BUTTONS === */
+.footer-buttons {
+margin-top: 30px;
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+.footer-buttons button {
+background-color: #121212; 
+color: #EAEAEA;
+border: 1px solid #333;
+}
+
+.footer-buttons button:hover {
+background-color: #E2945D; 
+border-color: #E2945D;
+color: #0A0A0A;
+}
+
+/* === REFERENCES === */
+.references a {
+color: #E2945D; 
+text-decoration: none;
+}
+
+.references a:hover {
+color: #FFFFFF;
+text-decoration: underline;
+}
+
+/* === MEDIA QUERIES (Responsiveness) === */
+@media (max-width: 600px) {
+.container {
+margin: 20px 10px;
+padding: 20px;
+border-radius: 15px;
+}
+h1 {
+font-size: 2em;
+padding: 20px 0;
+}
+.footer-buttons {
+gap: 10px;
+}
+.footer-buttons button {
+width: 100%;
+}
+}
